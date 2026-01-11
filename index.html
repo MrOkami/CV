@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expertise Culinaire & Gestion</title>
+    
+    <style>
+        :root {
+            --gold: #c5a059;
+            --accent-orange: #e67e22;
+            --text-main: #e0e0e0;
+            --text-dim: #b0b0b0;
+            /* Transparence augmentée : passage de 0.9 à 0.7 */
+            --glass-bg: rgba(25, 25, 25, 0.1);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+            color: var(--text-main);
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                        url('src/BG_CV.png') no-repeat center center fixed;
+            /* Correction du zoom : l'image s'adapte à la largeur sans zoomer à l'excès */
+            background-size: 100% auto;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+
+        header { text-align: center; padding: 40px 20px 10px 20px; }
+        h1 { font-size: 3em; margin: 0; letter-spacing: 2px; color: #fff; text-transform: uppercase; }
+        .tagline { color: var(--gold); font-size: 1.3em; font-weight: 300; margin-top: 5px; }
+
+        .tech-intro {
+            border-top: 1px solid rgba(197, 160, 89, 0.3);
+            border-bottom: 1px solid rgba(197, 160, 89, 0.3);
+            padding: 12px;
+            text-align: center;
+            margin: 20px auto 20px auto;
+            max-width: 850px;
+        }
+
+        .bio-highlight {
+            background: var(--glass-bg);
+            padding: 25px 30px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(197, 160, 89, 0.3);
+            backdrop-filter: blur(07px); /* Flou accentué pour la lisibilité */
+            text-align: center;
+        }
+
+        .main-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 25px; }
+        @media (max-width: 850px) { .main-grid { grid-template-columns: 1fr; } }
+
+        section {
+            background: var(--glass-bg);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px); /* Flou accentué pour la lisibilité */
+        }
+
+        h2 { 
+            color: var(--gold); 
+            text-transform: uppercase; 
+            font-size: 1.1em; 
+            margin-top: 0; 
+            border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .job { margin-bottom: 30px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 5px; }
+        .job-title { font-size: 1.25em; font-weight: bold; color: #fff; }
+        .job-date { color: var(--gold); font-weight: bold; font-size: 0.9em; }
+        .job-company { color: var(--accent-orange); font-style: italic; margin-bottom: 8px; display: block; }
+        
+        ul { padding-left: 18px; color: var(--text-dim); }
+        li { margin-bottom: 8px; font-size: 0.95em; }
+
+        .badge {
+            display: inline-block;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            padding: 5px 14px;
+            border-radius: 4px;
+            margin: 4px;
+            font-size: 0.85em;
+            background: rgba(197, 160, 89, 0.05);
+        }
+
+        .wa-btn {
+            display: inline-block; background: var(--accent-orange); color: #fff; 
+            padding: 8px 15px; border-radius: 50px; text-decoration: none; 
+            font-weight: bold; margin-top: 15px; transition: 0.3s;
+        }
+        .small-distinction { font-size: 0.85em; color: var(--text-dim); margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.05); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>FARKAS Guillaume</h1>
+        <div class="tagline">Fusion des Saveurs & Pilotage de Gestion</div>
+        <a href="https://wa.me/+21628105035" class="wa-btn">CONTACT WHATSAPP</a>
+    </header>
+
+    <div class="tech-intro">
+        <p><strong>Profil Hybride :</strong> Site conçu et programmé par mes soins. <br>
+        20 ans de Cuisine alliés à une passion pour le Développement Web et l'IA.</p>
+    </div>
+
+    <div class="bio-highlight">
+        <h2>Bio Express</h2>
+        <p style="color: var(--text-dim); font-size: 1.1em; max-width: 800px; margin: auto;">
+            Tombé dans la cuisine à l'âge de <strong>4 ans</strong>, mon parcours est guidé par une passion viscérale du goût. Adepte d'une cuisine authentique et efficace, je combine rigueur française et vision moderne de la restauration.
+        </p>
+    </div>
+
+    <div class="main-grid">
+        <div class="left-content">
+            <section>
+                <h2>Parcours Professionnel</h2>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Cuisine Artisanale & Recherches Personnelles</span> 
+                        <span class="job-date"> - De l'enfance au présent -</span>
+                    </div>
+                    <span class="job-company">Vocation culinaire et perfectionnement continu</span>
+                    <ul>
+                        
+                        <li><b>Techniques maîtrisées :</b> Perfectionnement continu des techniques de transformation (fumaison artisanale, Charcuterie maison marinades, foie gras).</li>
+                        <li><b>R&D :</b> Développement de recettes personnelles axées sur la fusion des saveurs et la priorité absolue au goût.</li>
+                        <li><b>Réseau :</b> Réalisation de plats et pâtisseries pour le cercle privé et le réseau de proximité.</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Cuisinier / Responsable Polyvalent</span>
+                        <span class="job-date">2005 — 2020</span>
+                    </div>
+                    <span class="job-company">Brasserie du Rondeau — Grenoble, France</span>
+                    <ul>
+                        <li>Maîtrise intégrale de la chaîne de production (Entrées, Plats, Desserts).</li>
+                        <li>Gestion autonome de l'économat et de la comptabilité d'exploitation.</li>
+                        <li>Optimisation des coûts de revient et suivi des stocks.</li>
+                        <li>Recrutement et formation technique de nombreux apprentis sur 15 ans.</li>
+                        <li>Participation active au recrutement du personnel de cuisine et de salle.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Pizzaiolo & Responsable entrées et desserts</span>
+                        <span class="job-date">2009 — 2011</span>
+                    </div>
+                    <span class="job-company">L'esprit Bistro — Grenoble, France</span>
+                    <ul>
+                        <li>Gestion complète du pôle Pizza, des Entrées et création des Desserts maison.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Formations</h2>
+                <p><strong>Gestion d'entreprise au CEFMD — Grenoble (2012)</strong></p>
+                <p style="font-size: 0.9em; color: var(--text-dim);">Spécialisation en gestion d'exploitation et comptabilité analytique.</p>
+            </section>
+        </div>
+
+        <div class="sidebar">
+            <section style="text-align: center;">
+                <h2>Distinctions</h2>
+                <div style="margin-bottom: 15px;">
+                    <span style="font-size: 2.5em;">🏆</span>
+                    <p><strong>1er Prix Dessert de Fruits Frais</strong><br>
+                    Concours du MIN de Grenoble (2007)</p>
+                </div>
+                <div class="small-distinction">
+                    <p>Recrutement historique basé sur la réputation de l'établissement (Brasserie du Rondeau).</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Savoir-faire</h2>
+                <div class="skills-container">
+                    <span class="badge">Fusion des Saveurs</span>
+                    <span class="badge">Priorité au Goût</span>
+                    <span class="badge">Gestion Économat</span>
+                    <span class="badge">Calcul de rentabilité</span>
+                    <span class="badge">Web Dev & IA</span>
+                    <span class="badge">Formation Apprentis</span>
+                    <span class="badge">HACCP</span>
+                    <span class="badge">Cuisson basse température</span>
+                </div>                        
+            </section>
+        </div>
+    </div>
+
+
+</body>
+</html>
